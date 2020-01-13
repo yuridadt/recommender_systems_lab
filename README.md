@@ -7,4 +7,4 @@ recommender - SlopeOne и KNN (ЛР2 и ЛР3)
 
 SVD - Singular Vector Decomposition (ЛР4)
 
-Hybrid recomendation systems - in progress (ЛР5)
+Hybrid recomendation systems (ЛР5)
