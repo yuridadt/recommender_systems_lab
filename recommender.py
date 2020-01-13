@@ -177,4 +177,4 @@ if __name__ == "__main__":
 
     rec = r.recommend(id)
     print('рекомендуемые фильмы для' + id + ':', rec)
-    print(1)
+    print('...end of calculations...')

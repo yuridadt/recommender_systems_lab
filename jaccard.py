@@ -57,3 +57,4 @@ if __name__ == "__main__":
 
     association_matrix = association_method(film_counts, all_people)
     print('Матрица ассоциаций: ', association_matrix)
+    print('...end of calculations...')

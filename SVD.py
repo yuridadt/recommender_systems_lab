@@ -17,3 +17,4 @@ sigma = np.diag(sigma)
 #строим матрицу предсказаний для каждого пользователя
 all_user_predicted_ratings = np.dot(np.dot(U, sigma), Vt) + user_ratings_mean.reshape(-1, 1)
 preds_df = pd.DataFrame(all_user_predicted_ratings, columns = df.columns)
+print('...end of calculations...')
