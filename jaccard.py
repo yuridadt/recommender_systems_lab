@@ -38,6 +38,7 @@ def association_method(dict,all_people):
     return association_matrix
 
 if __name__ == "__main__":
+
     df = pd.read_csv('ratingsABDwithgaps.csv',sep = ';', index_col=0)#.T
     users_gaps = df.to_dict()
     #убираем пропущенные значения

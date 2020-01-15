@@ -1,13 +1,6 @@
 import pandas as pd
 from math import isnan, sqrt
 
-df = pd.read_csv('ratingsABDwithgaps.csv',sep = ';', index_col=0).T
-users_gaps = df.to_dict()
-#убираем пропущенные значения
-users ={}
-for key, value in users_gaps.items():
-    users[key] = {k: value[k] for k in value if not isnan(value[k])}
-
 
 class recommender:
 
@@ -154,6 +147,13 @@ class recommender:
 
 
 if __name__ == "__main__":
+
+    df = pd.read_csv('ratingsABDwithgaps.csv', sep=';', index_col=0).T
+    users_gaps = df.to_dict()
+    # убираем пропущенные значения
+    users = {}
+    for key, value in users_gaps.items():
+        users[key] = {k: value[k] for k in value if not isnan(value[k])}
 
     #рассчитываем матрицу отклонений
 

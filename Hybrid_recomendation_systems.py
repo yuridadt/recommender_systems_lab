@@ -53,10 +53,8 @@ if __name__ == "__main__":
 
     train_precision = precision_at_k(model, train, k=10).mean()
     test_precision = precision_at_k(model, test, k=10).mean()
-
     train_auc = auc_score(model, train).mean()
     test_auc = auc_score(model, test).mean()
-
     print('BPR Precision: train %.2f, test %.2f.' % (train_precision, test_precision))
     print('BPR AUC: train %.2f, test %.2f.' % (train_auc, test_auc))
 
@@ -70,6 +68,4 @@ if __name__ == "__main__":
     test_auc = auc_score(model, test).mean()
     print('WARP Precision: train %.2f, test %.2f.' % (train_precision, test_precision))
     print('WARP AUC: train %.2f, test %.2f.' % (train_auc, test_auc))
-
-
     print('...end of calculations...')
