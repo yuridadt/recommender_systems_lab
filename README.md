@@ -1,10 +1,10 @@
 # recommender_systems_lab
 лабы по рекомендательным системам
 
-jaccard - матрица схожести и расстояние Жаккара (ЛР1)
+jaccard - матрица ассоциаций + матрица схожести по расстоянию Жаккара (ЛР1)
 
 recommender - SlopeOne и KNN (ЛР2 и ЛР3)
 
 SVD - Singular Vector Decomposition (ЛР4)
 
-Hybrid recomendation systems - in progress (ЛР5)
+Hybrid recomendation systems (ЛР5)
